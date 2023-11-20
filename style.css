@@ -1,0 +1,706 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body{
+  background: #f1f1f0;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+/*------------------------------------------------------------------header-----------------------------------------------*/
+.logo img{
+    width: 70px;
+}
+
+.contacts img{
+    width: 30px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    width: 100%;
+    background: #1a1a1a;
+    max-height: 10vh;
+    position: fixed;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.header{
+    width: 100%;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.portfolio{
+    margin-left: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    display: flex;
+}
+
+.portfolio p{
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo p{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/*-----------------------------------------------------------------------------------------about me---------------------------------------------------------------------------------------*/
+
+.aboutme img{
+    margin-top: 10vh;
+    width: 100%
+}
+
+.aboutmerow{
+    display: flex;
+    align-items: center;
+}
+
+.aboutme{
+    margin-top: 0px;
+}
+
+.infocol{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infocol p{
+    width: 80%;
+    text-align: justify;
+    color: #666769;
+}
+
+.infocol h1{
+    font-size: 4rem;
+    margin-bottom: 30px;
+    color: #0652e9;
+}
+
+.aboutmecol{
+    flex-basis: 50%;
+}
+
+/*-------------------------------------------------------------------------------------------why me-----------------------------------------------------------------------*/
+.whymerow{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.whyme img{
+    width: 60%;
+    display: flex;
+    right: 0;
+    justify-content: right;
+    margin-left: 20%;
+}
+
+.whymecol{
+    flex-basis: 50%;
+    margin-bottom: 0px;
+}
+
+.whymecol p{
+    width: 90%;
+    text-align: justify;
+    font-size: 1rem;
+    color: #f1f1f0;
+}
+
+.whymecol h1{
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1; 
+    color: #62e1e9;
+}
+
+.line {
+    width: 10%;
+    height: 1px;
+    background-color: #62e1e9;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+
+  .container {
+    text-align: center;
+    position: relative;
+    padding: 15px 0;
+    width: 70%;
+    align-items: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .whyme {
+    position: relative;
+    height: 84vh; /* Set the height of the section */
+    background-image: url(https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/about%20me%20page%20ui%20design.png); /* Replace 'your-image.jpg' with your image file */
+    background-size: cover; /* Cover the entire section with the background image */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; 
+    margin-bottom: 0px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+  }
+
+  .content {
+    position: relative;
+    z-index: 1; /* Place the content above the overlay */
+    color: #fff; /* Set the text color to white or the desired color */
+    padding: 20px; /* Add padding to the content for better visibility */
+  }
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.imagecol{
+    background: #f1f1f0;
+}
+
+/*-------------------------------------------------------------------------my services-----------------------------------------------------------*/
+.service{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.servicerow{
+    display: flex;
+    align-items: center;
+}
+
+.myservices{
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.servicescol1{
+    flex-basis: 35%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 4%;
+}
+
+.servicescol2{
+    flex-basis: 65%;
+    background: #1a1a1a;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0;
+}
+
+.scont{
+    background: #1a1a1a;
+}
+
+.service img{
+    width: 7%;
+    height: 7%;
+    margin-right: 3%;
+}
+
+.service h1{
+    margin-bottom: 1%;
+    font-size: 1.2rem;
+    color: #62e1e9;
+}
+
+.service p{
+    font-size: 0.8rem;
+    text-align: justify;
+    color: #666769;
+}
+
+.service2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.servicescol1 h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.servicescol1 p{
+    width: 90%;
+    text-align: justify;
+    color: #666769;
+}
+
+/*---------------------------------------------------------------------------------website-------------------------------------------------------*/
+.whatrow{
+    display: flex;
+}
+
+.whatcol1{
+    flex-basis: 38%;
+    background: #1a1a1a;
+    height: 100vh;
+}
+
+.whatcol2{
+    flex-basis: 60%;
+}
+
+.what{
+    position: relative;
+    min-height: 100vh;
+}
+
+.what img{
+    width: 50%;
+    display: block;
+    top: 20%;
+    bottom: 50%;
+    left: 10%;
+    transform: translate(-50% -50%);
+    position: absolute;
+}
+
+.whath1main{
+    font-size: 2rem;
+    padding: 2%;
+    margin-left: 2%;
+    margin-top: 5%;
+    color: #62e1e9;
+}
+
+.whatinfo{
+    margin-left: 40%;
+    margin-bottom: 5%;
+}
+
+.whatcol2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.whath1{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #0652e9;
+}
+
+.whatinfo p{
+    font-size: 0.8rem;
+    color: #666769;
+    text-align: justify;
+    width: 90%;
+}
+
+/*---------------------------------------------------------------------digital marketing--------------------------------------------------------*/
+.digitalcontainer{
+    display: flex;
+}
+
+.digitalcontainer img{
+    width: 7%;
+    height: 7%;
+    margin-right: 2%;
+}
+
+.digitalrow{
+    display: flex;
+    align-items: center;
+}
+
+.lady{
+    width: 100%;
+    position: relative;
+}
+
+.dc1{
+    flex-basis: 35%;
+}
+
+.dc2{
+    flex-basis: 65%;
+    margin-left: 10%;
+}
+
+.digitalinfo h1{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.digitalinfo p{
+    font-size: 1rem;
+    color: #666769;
+    width: 90%;
+    text-align: justify;
+}
+
+.digitalinfo{
+    margin-bottom: 3%;
+    width: 90%;
+}
+
+.dc2h1{
+    font-size: 3rem;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+/*--------------------------------------------------------------------------------------------------cybersecurity-----------------------------------------------------------*/
+.cybercontainer img{
+    width: 7%;
+    height: 7%;
+    margin-right: 10px;
+}
+
+.cybercontainer{
+    display: flex;
+}
+
+.cyberinfo h1{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.cyberinfo p{
+    font-size: 1rem;
+    color: #666769;
+    width: 90%;
+    text-align: justify;
+}
+
+.cyberinfo {
+    margin-bottom: 3%;
+    width: 90%;
+}
+
+.cyberrow{
+    display: flex;
+    align-items: center;
+}
+
+.devimg{
+    width: 60%;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-left: 20%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.cybercol{
+    flex-basis: 50%;
+}
+
+.cc1{
+    margin-left: 5%;
+}
+
+.cc2{
+    background: #1a1a1a;
+}
+
+.cch1{
+    font-size: 3rem;
+    margin-bottom: 5%;
+}
+
+/*---------------------------------------------------------------------------------------differentiators-------------------------------------------------------------*/
+.diffcontainer img{
+    width: 15%;
+    margin-bottom: 10px;
+}
+
+.diffsubcol{
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.diffcontainer{
+    flex-basis: 50%;
+}
+
+.diffrow{
+    display: flex;
+    align-items: center;
+}
+
+.dcc1{
+    flex-basis: 35%;
+}
+.dcc2{
+    flex-basis: 65%;
+    margin: 0 5%;
+}
+
+.dcc1 img{
+    width: 100%;
+}
+
+.dcch1{
+    font-size: 2rem;
+    color: #0652e9;
+    margin-bottom: 5%;
+}
+
+.diffinfo h1{
+    font-size: 1rem;
+    margin-bottom: 3%;
+}
+
+.diffinfo p{
+    font-size: 0.8rem;
+    color: #666769;
+    text-align: justify;
+}
+
+.sb1{
+    margin-right: 5%;
+}
+
+/*-------------------------------------------------------------------------------testimonials----------------------------------------------------------------------*/
+.author{
+    display: flex;
+    align-items: center ;
+}
+
+.storycontainer{
+    background: #ffffff;
+    margin-bottom: 40px;
+    width: 70%;
+    margin-left: 10%;
+    padding: 2%;position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border:  1px solid #0652e9;
+    border-radius: 10px;
+}
+
+.person img{
+    width: 35%;
+    margin-left: -60px;
+    border: 1px solid #62e1e9;
+    border-radius: 10px;
+    position: relative;
+    background: #ffffff;
+    padding: 2%;
+}
+
+.story{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.testimony{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: -55%;
+}
+
+.person{
+    display: flex;
+}
+
+.successrow{
+    display: flex;
+    align-items: center;
+}
+
+.successcol{
+    flex-basis: 50%;
+}
+
+.successimg{
+    width: 80%;
+}
+
+.author{
+    font-weight: normal;
+    font-size: 1rem;
+    margin-bottom: 2%;
+}
+
+.author h1{
+    font-size: 1rem;
+    margin-right: 4px;
+}
+
+.author p{
+    font-style: italic;
+}
+
+.message{
+    margin-bottom: 2%;
+    font-size: 0.8rem;
+    color: #666769;
+}
+
+.rating{
+    color: #0652e9;
+}
+
+.successh1{
+    margin-left: -10%;
+}
+
+.successh1 h1{
+    font-size: 2rem;
+    margin-bottom: 3%;
+}
+
+/*-----------------------------------------------------------------------------------footer--------------------------------------*/
+
+.footerh1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0;
+    color: #0652e9;
+    font-size: 1.5rem;
+}
+
+.valuesrow1{
+    display: flex;
+    margin-bottom: 3%;
+}
+.valuesrow2{
+    display: flex;
+}
+
+.valueicon{
+    width: 4%;
+    height: 4%;
+    margin-right: 10px;
+}
+
+.valuescol{
+    flex-basis: 50%;
+}
+
+.value-list{
+    display: flex;
+    margin: 0 10%;
+    width: 80%;
+}
+
+.footer{
+    background: #1a1a1a;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-title{
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 1%;
+}
+
+.value-description{
+    color: #666769;
+    text-align: justify;
+}
+
+/*------------------------------------------------------------------------------------------------subfooter---------------------------------------------*/
+.copyright img{
+    width: 70px;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.copyright i{
+    margin-right: 5px;
+}
+
+.copyright a{
+    font-weight: bold;
+}
+
+.subfooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    width: 100%;
+    background: #1a1a1a;
+    border-top: 0.01px solid #666769;
+    margin-bottom: 0px;
+    color: #ffffff;
+}
+
+a:hover{
+    color: #0652e9;
+}
+
+a{
+    transition: 1s;
+}

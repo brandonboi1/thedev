@@ -75,6 +75,33 @@ a {
     font-weight: bold;
 }
 
+@media (max-width: 700px){
+    .logo img{
+        width: 40px;
+    }
+    
+    .contacts img{
+        width: 15px;
+    }
+
+    .header p{
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 950px){
+    .logo img{
+        width: 60px;
+    }
+    
+    .contacts img{
+        width: 25px;
+    }
+
+    .header p{
+        font-size: 0.8rem;
+    }
+}
 /*-----------------------------------------------------------------------------------------about me---------------------------------------------------------------------------------------*/
 
 .aboutme img{
@@ -112,6 +139,40 @@ a {
 
 .aboutmecol{
     flex-basis: 50%;
+}
+
+@media (max-width: 700px){
+    .aboutmerow{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .infocol h1{
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #0652e9;
+    }
+
+    .infocol p{
+        width: 90%;
+        text-align: justify;
+        color: #666769;
+        font-size: 0.8rem;
+    }
+
+    .infocol{
+        margin-bottom: 10%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 950px){
+    .aboutme .infocol h1{
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #0652e9;
+    }
 }
 
 /*-------------------------------------------------------------------------------------------why me-----------------------------------------------------------------------*/
@@ -171,10 +232,10 @@ a {
 
   .whyme {
     position: relative;
-    height: 84vh; /* Set the height of the section */
+    height: 84vh;
     background-image: url(https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/about%20me%20page%20ui%20design.png); /* Replace 'your-image.jpg' with your image file */
-    background-size: cover; /* Cover the entire section with the background image */
-    background-position: center; /* Center the background image */
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed; 
     margin-bottom: 0px;
   }
@@ -185,14 +246,14 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    background-color: rgba(0, 0, 0, 0.6);
   }
 
   .content {
     position: relative;
-    z-index: 1; /* Place the content above the overlay */
-    color: #fff; /* Set the text color to white or the desired color */
-    padding: 20px; /* Add padding to the content for better visibility */
+    z-index: 1;
+    color: #fff;
+    padding: 20px;
   }
 
 .overlay{
@@ -206,6 +267,43 @@ a {
 
 .imagecol{
     background: #f1f1f0;
+}
+
+@media(max-width: 700px){
+    .whymerow{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    
+    .whyme img{
+        display: none;
+    }
+
+    .whyme{
+        height: 50vh;
+        margin-top: 0;
+    }
+
+    .whymecol p{
+        width: 90%;
+        text-align: justify;
+        font-size: 0.8rem;
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 950px){
+    .whyme{
+        height: 35vh;
+    }
+
+    .imagecol{
+        background: #f1f1f0;
+        height: 100%;
+        margin-top: 0;
+    }
 }
 
 /*-------------------------------------------------------------------------my services-----------------------------------------------------------*/
@@ -285,6 +383,60 @@ a {
     color: #666769;
 }
 
+@media (max-width: 700px){
+    .servicerow{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .service{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .servicescol1{
+        margin-bottom: 5%;
+        padding: 0;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .servicescol1 p{
+        width: 100%;
+    }
+
+    .service h1{
+        margin-bottom: 1%;
+        font-size: 0.7rem;
+        color: #62e1e9;
+    }
+    
+    .service p{
+        font-size: 0.6rem;
+        text-align: justify;
+        color: #666769;
+    }
+
+    .servicescol1 h1{
+        font-size: 2rem;
+        margin-bottom: 20px;
+        margin-top: 3%;
+    }
+    
+    .servicescol1 p{
+        width: 100%;
+        font-size: 0.7rem;
+        text-align: justify;
+        color: #666769;
+    }
+}
+
+
 /*---------------------------------------------------------------------------------website-------------------------------------------------------*/
 .whatrow{
     display: flex;
@@ -302,7 +454,6 @@ a {
 
 .what{
     position: relative;
-    min-height: 100vh;
 }
 
 .what img{
@@ -348,6 +499,52 @@ a {
     width: 90%;
 }
 
+@media (max-width: 700px){
+    .whatrow{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .what img{
+        width: 102%;
+        display: block;
+        top: 20%;
+        bottom: 50%;
+        left: 0%;
+        transform: translate(-50% -50%);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .whatinfo{
+        margin-left: 5%;
+        margin-bottom: 1%;
+        margin-top: 5%;
+    }
+
+    .whath1{
+        font-size: 0.7rem;
+        margin-bottom: 5px;
+        color: #0652e9;
+    }
+    
+    .whatinfo p{
+        font-size: 0.6rem;
+        color: #666769;
+        text-align: justify;
+        width: 95%;
+    }
+
+    .what{
+        margin-bottom: 3%;
+    }
+}
+
+@media(max-width: 950px){
+    .whatcol1{
+        height: 70vh;
+    }
+}
 /*---------------------------------------------------------------------digital marketing--------------------------------------------------------*/
 .digitalcontainer{
     display: flex;
@@ -401,6 +598,54 @@ a {
     margin-top: 5%;
 }
 
+@media (max-width: 700px){
+    .digitalrow{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .dc2h1{
+        font-size: 2rem;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .dc2{
+        flex-basis: 65%;
+        margin-left: 5%;
+    }
+
+    .digitalinfo h1{
+        font-size: 0.7rem;
+        margin-bottom: 10px;
+    }
+    
+    .digitalinfo p{
+        font-size: 0.6rem;
+        color: #666769;
+        width: 95%;
+        text-align: justify;
+    }
+}
+
+@media(max-width: 950px){
+    .lady{
+        width: 110%;
+        position: relative;
+    }
+
+    .digitalinfo h1{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    
+    .digitalinfo p{
+        font-size: 0.8rem;
+        color: #666769;
+        width: 90%;
+        text-align: justify;
+    }
+}
 /*--------------------------------------------------------------------------------------------------cybersecurity-----------------------------------------------------------*/
 .cybercontainer img{
     width: 7%;
@@ -461,6 +706,45 @@ a {
     margin-bottom: 5%;
 }
 
+@media (max-width: 700px){
+    .cyberrow{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cch1{
+        font-size: 1.5rem;
+        margin-bottom: 5%;
+    }
+
+    .cyberinfo h1{
+        font-size: 0.7rem;
+        margin-bottom: 10px;
+    }
+    
+    .cyberinfo p{
+        font-size: 0.6rem;
+        color: #666769;
+        width: 95%;
+        text-align: justify;
+    }
+}
+
+@media(max-width: 950px){
+    .cyberinfo h1{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    
+    .cyberinfo p{
+        font-size: 0.8rem;
+        color: #666769;
+        width: 90%;
+        text-align: justify;
+    }
+}
+
 /*---------------------------------------------------------------------------------------differentiators-------------------------------------------------------------*/
 .diffcontainer img{
     width: 15%;
@@ -514,6 +798,36 @@ a {
     margin-right: 5%;
 }
 
+@media (max-width: 700px){
+    .diffrow{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .diffinfo h1{
+        font-size: 0.7rem;
+        margin-bottom: 3%;
+    }
+    
+    .diffinfo p{
+        font-size: 0.6rem;
+        color: #666769;
+        text-align: justify;
+    }
+
+    .dcc1 img{
+        width: 100%;
+        display: none;
+    }
+
+    .dcch1{
+        font-size: 2rem;
+        color: #0652e9;
+        margin-bottom: 5%;
+        margin-top: 3%;
+    }
+}
 /*-------------------------------------------------------------------------------testimonials----------------------------------------------------------------------*/
 .author{
     display: flex;
@@ -607,6 +921,88 @@ a {
     margin-bottom: 3%;
 }
 
+@media (max-width: 700px){
+    .successrow{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .successimg{
+        width: 100%;
+    }
+
+    .successh1{
+        margin-left: 5%;
+    }
+
+    .author h1{
+        font-size: 0.7rem;
+        margin-right: 4px;
+    }
+    
+    .author p{
+        font-style: italic;
+        font-size: 0.7rem;
+    }
+    
+    .message{
+        margin-bottom: 2%;
+        font-size: 0.6rem;
+        color: #666769;
+    }
+
+    .rating{
+        color: #0652e9;
+        font-size: 0.6rem;
+    }
+
+    .person img{
+        width: 35%;
+        margin-left: -30px;
+        border: 1px solid #62e1e9;
+        border-radius: 10px;
+        position: relative;
+        background: #ffffff;
+        padding: 2%;
+    }
+
+    .testimony{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: -65%;
+    }
+
+    .storycontainer{
+        background: #ffffff;
+        margin-bottom: 40px;
+        width: 70%;
+        margin-left: 18%;
+        padding: 2%;position: relative;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        border:  1px solid #0652e9;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 950px){
+    .person img{
+        width: 35%;
+        margin-left: -50px;
+        border: 1px solid #62e1e9;
+        border-radius: 10px;
+        position: relative;
+        background: #ffffff;
+        padding: 2%;
+    }
+
+    .successh1 p{
+        width: 90%;
+    }
+}
 /*-----------------------------------------------------------------------------------footer--------------------------------------*/
 
 .footerh1{
@@ -665,6 +1061,25 @@ a {
     text-align: justify;
 }
 
+@media (max-width: 700px){
+    .value-title{
+        font-size: 0.7rem;
+        color: #ffffff;
+        margin-bottom: 1%;
+    }
+    
+    .value-description{
+        font-size: 0.5rem;
+        color: #666769;
+        text-align: justify;
+    }
+
+    .value-list{
+        display: flex;
+        margin: 0 5%;
+        width: 90%;
+    }
+}
 /*------------------------------------------------------------------------------------------------subfooter---------------------------------------------*/
 .copyright img{
     width: 70px;
@@ -703,4 +1118,33 @@ a:hover{
 
 a{
     transition: 1s;
+}
+
+@media (max-width: 700px){
+    .copyright img{
+        width: 40px;
+    }
+
+    .copyright{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 0.6rem;
+    }
+
+    .subfooter p{
+        font-size: 0.5rem;
+    }
+
+    .subfooter{
+        display: flex;
+        flex-direction: column-reverse;
+        border-top: 0.001px solid #666769;
+    }
+}
+
+@media (max-width: 950px){
+    .subfooter p{
+        font-size: 0.75rem;
+    }
 }

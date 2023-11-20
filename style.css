@@ -76,16 +76,20 @@ a {
 }
 
 @media (max-width: 700px){
-    .logo img{
-        width: 40px;
+    .header .logo img{
+        width: 30px;
     }
     
-    .contacts img{
-        width: 15px;
+    .header .contacts1 img{
+        width: 11px;
     }
 
-    .header p{
-        font-size: 0.5rem;
+
+    .header .logo p{
+        font-size: 0.6rem;
+    }
+    .header .portfolio p{
+        font-size: 0.6rem;
     }
 }
 

@@ -986,6 +986,19 @@ a {
         list-style: none;
         font-size: 0.6em;
     }
+
+    .pricinginfo h1{
+        color: #0652e9;
+        font-size: 1rem;
+        margin-top: 1%;
+    }
+
+    .pricinginfo p{
+        margin-top: 2%;
+        font-size: 0.8rem;
+        color: #666769;
+        text-align: center;
+    }
 }
 
 @media (max-width: 1050px){
@@ -1005,7 +1018,23 @@ a {
 
     .pricelist ul li{
         list-style: none;
-        font-size: 0.7em;
+        font-size: 0.5em;
+    }
+
+    .pricetittle{
+        font-size: 1rem;
+    }
+
+    .price{
+        color: #0652e9;
+        font-style: italic;
+        font-size: 1rem;
+    }
+    
+    .pricedes{
+        font-size: 0.6rem;
+        color: green;
+        text-align: center;
     }
 }
 

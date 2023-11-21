@@ -196,7 +196,6 @@ a {
 
 .whymecol{
     flex-basis: 50%;
-    margin-bottom: 0px;
 }
 
 .whymecol p{
@@ -236,21 +235,12 @@ a {
 
   .whyme {
     position: relative;
-    height: 84vh;
-    background-image: url(https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/about%20me%20page%20ui%20design.png); /* Replace 'your-image.jpg' with your image file */
+    min-height: fit-content;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/about%20me%20page%20ui%20design.png); /* Replace 'your-image.jpg' with your image file */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
     margin-bottom: 0px;
-  }
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
   }
 
   .content {
@@ -265,7 +255,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -285,28 +275,27 @@ a {
         display: none;
     }
 
-    .whyme{
-        height: 50vh;
-        margin-top: 0;
-    }
-
     .whymecol p{
         width: 90%;
         text-align: justify;
         font-size: 0.8rem;
         color: #ffffff;
     }
+
+    .whymecol{
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 950px){
-    .whyme{
-        height: 35vh;
-    }
-
     .imagecol{
         background: #f1f1f0;
         height: 100%;
         margin-top: 0;
+    }
+
+    .whymecol{
+        margin-bottom: 10px;
     }
 }
 
@@ -832,6 +821,194 @@ a {
         margin-top: 3%;
     }
 }
+
+/*-------------------------------------------------------------------------------------pricing----------------------------------------------------------------------------*/
+.pricingrow{
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.pricingcol{
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricingcontainer{
+    border: 2px solid #0652e9;
+    border-radius: 10px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    position: relative;
+    width: fit-content;
+}
+
+.priceimg{
+    width: 30%;
+    border-radius: 10px;
+    padding: 1%;
+    border: 2px solid #62e1e9;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.pricing{
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.priceinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pricelist ul li{
+    list-style: none;
+    font-size: 0.8em;
+}
+
+.pricelist{
+    margin-bottom: 20px;
+}
+
+.pricelist i{
+    margin-right: 10px;
+    color: green;
+}
+
+.price{
+    color: #0652e9;
+    font-style: italic;
+}
+
+.pricedes{
+    font-size: 0.8rem;
+    color: green;
+}
+
+.price2{
+    margin: 0 3%;
+    width: 100%;
+}
+
+.p1{
+    width: 100%;
+}
+
+.pricinginfo{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.pricinginfo p{
+    margin-top: 2%;
+    font-size: 1rem;
+    color: #666769;
+    text-align: center;
+}
+
+.pricinginfo h1{
+    color: #0652e9;
+    font-size: 1.5rem;
+    margin-top: 1%;
+}
+
+.pricebtn{
+    border: 1px solid #0652e9;
+    padding: 3%;
+    transition: 1s;
+}
+
+.pricebtn a{
+    color: #62e1e9;
+    font-weight: bold;
+}
+
+.pricebtn:hover{
+    border: 2px solid #0652e9;
+}
+
+@media (max-width: 700px){
+    .pricingrow{
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-left: 1%;
+    }
+    
+    .pricingcol{
+        flex-basis: 27%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .price2{
+        margin: 0 0;
+        width: 100%;
+    }
+
+    .pricing{
+        padding: 2% 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        
+    }
+
+    .pricelist ul li{
+        list-style: none;
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 1050px){
+    .price2{
+        margin: 0 0;
+        width: 100%;
+    }
+
+    .pricing{
+        padding: 2% 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        
+    }
+
+    .pricelist ul li{
+        list-style: none;
+        font-size: 0.7em;
+    }
+}
+
 /*-------------------------------------------------------------------------------testimonials----------------------------------------------------------------------*/
 .author{
     display: flex;
@@ -1006,6 +1183,45 @@ a {
     .successh1 p{
         width: 90%;
     }
+}
+
+/*--------------------------------------------------------------------------------------------------budges------------------------------------------------------------*/
+.budges{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 0;
+}
+
+.bdg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bdg h1{
+    font-size: 2rem;
+    color: #0652e9;
+    margin-bottom: 20px;
+}
+
+.bdg p{
+    font-size: 1rem;
+    color: #f1f1f0;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 90%;
+}
+
+.budges-row{
+    border: 2px solid #62e1e9;
+    padding: 3% 3%  0;
+    border-radius: 10px;
+    margin: 0 5%;
+    align-items: center;
+    justify-content: center;
 }
 /*-----------------------------------------------------------------------------------footer--------------------------------------*/
 

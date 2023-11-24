@@ -81,7 +81,8 @@ a {
     }
     
     .header .contacts1 img{
-        width: 11px;
+        width: 10px;
+        display: none;
     }
 
 
@@ -90,6 +91,10 @@ a {
     }
     .header .portfolio p{
         font-size: 0.6rem;
+    }
+
+    .subfooter .contacts img{
+        width: 20px;
     }
 }
 
@@ -184,6 +189,7 @@ a {
     display: flex;
     align-items: center;
     margin-bottom: 0px;
+    height: fit-content;
 }
 
 .whyme img{
@@ -192,6 +198,7 @@ a {
     right: 0;
     justify-content: right;
     margin-left: 20%;
+    margin-top: 0px;
 }
 
 .whymecol{
@@ -203,6 +210,7 @@ a {
     text-align: justify;
     font-size: 1rem;
     color: #f1f1f0;
+    margin-top: 0px;
 }
 
 .whymecol h1{
@@ -212,6 +220,7 @@ a {
     position: relative;
     z-index: 1; 
     color: #62e1e9;
+    margin-bottom: 0px;
 }
 
 .line {
@@ -260,7 +269,8 @@ a {
 }
 
 .imagecol{
-    background: #f1f1f0;
+    background-color: #f1f1f0;
+    height: 100%;
 }
 
 @media(max-width: 700px){
@@ -275,10 +285,14 @@ a {
         display: none;
     }
 
+    .whymecol h1{
+        font-size: 1.2rem;
+    }
+
     .whymecol p{
         width: 90%;
         text-align: justify;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         color: #ffffff;
     }
 
@@ -296,6 +310,10 @@ a {
 
     .whymecol{
         margin-bottom: 10px;
+    }
+
+    .whymecol p{
+        font-size: 0.8rem;
     }
 }
 
@@ -535,7 +553,7 @@ a {
 
 @media(max-width: 950px){
     .whatcol1{
-        height: 70vh;
+        height: 50vh;
     }
 }
 /*---------------------------------------------------------------------digital marketing--------------------------------------------------------*/
@@ -703,11 +721,11 @@ a {
     .cyberrow{
         display: flex;
         align-items: center;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .cch1{
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-bottom: 5%;
     }
 
@@ -811,7 +829,6 @@ a {
 
     .dcc1 img{
         width: 100%;
-        display: none;
     }
 
     .dcch1{
@@ -989,13 +1006,13 @@ a {
 
     .pricinginfo h1{
         color: #0652e9;
-        font-size: 1rem;
+        font-size: 1.1rem;
         margin-top: 1%;
     }
 
     .pricinginfo p{
         margin-top: 2%;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         color: #666769;
         text-align: center;
     }
@@ -1252,6 +1269,12 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 700px){
+    .bdg p{
+        font-size: 0.7rem;
+    }
+}
 /*-----------------------------------------------------------------------------------footer--------------------------------------*/
 
 .footerh1{
@@ -1378,19 +1401,25 @@ a{
         display: flex;
         flex-direction: row;
         align-items: center;
-        font-size: 0.6rem;
+        font-size: 0.4rem;
     }
 
-    .subfooter p{
-        font-size: 0.5rem;
-    }
 
     .subfooter{
         display: flex;
         flex-direction: column-reverse;
         border-top: 0.001px solid #666769;
     }
+
+    .subfooter .copyright p{
+        font-size: 0.4rem;
+    }
+
+    .subfooter .portfolio p{
+        font-size: 0.5rem;
+    }
 }
+
 
 @media (max-width: 950px){
     .subfooter p{

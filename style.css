@@ -220,7 +220,8 @@ a {
     position: relative;
     z-index: 1; 
     color: #62e1e9;
-    margin-bottom: 0px;
+    margin-top: -10px;
+
 }
 
 .line {
@@ -229,7 +230,7 @@ a {
     background-color: #62e1e9;
     display: flex;
     align-items: center;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
   }
 
   .container {
@@ -892,7 +893,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .pricelist ul li{
@@ -934,7 +935,7 @@ a {
     width: 90%;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .pricinginfo p{
